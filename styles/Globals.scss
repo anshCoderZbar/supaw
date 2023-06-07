@@ -1,0 +1,34 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.main_container {
+  width: 100%;
+  max-width: 1700px;
+  margin: 0px auto;
+  @media only screen and (max-width: 600px) {
+    .main_container {
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

@@ -1,0 +1,8 @@
+.footer_layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
