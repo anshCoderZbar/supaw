@@ -10,7 +10,7 @@ export const Header = () => {
     <nav
       className={`navbar navbar-expand-lg navbar-light py-4 ${styles.main_nav}`}
     >
-      <div className="container-fluid main_container">
+      <div className="container-fluid">
         <Image src={logo} loading="lazy" alt="headerLogo" />
         <button
           className="navbar-toggler"
@@ -24,7 +24,7 @@ export const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ul className="navbar-nav ms-auto gap-lg-4">
+          <ul className={`navbar-nav ms-auto gap-lg-4 align-items-center ${styles.o_s_s}`}>
             <li className="nav-item fw-semibold active">
               <a className="nav-link text-dark" href="#">
                 Pet Supplies
