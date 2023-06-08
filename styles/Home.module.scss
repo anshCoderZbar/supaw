@@ -45,6 +45,9 @@
   img {
     height: 250px;
     margin-top: 30px;
+    @media only screen and (max-width: 800px) {
+      height: 100%;
+    }
   }
 }
 
@@ -161,21 +164,23 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
+
   .box {
     height: 300px;
     width: 100%;
     border-radius: 40px;
     display: grid;
     place-items: center;
+
     p {
       width: 314px;
-      height: 120px;
       color: white;
+      margin-bottom: 0 !important;
       text-align: center;
       font-weight: 600;
       font-size: 48px;
-      line-height: 60px;
     }
+
     button {
       padding: 11px 22px;
       background: #000000;
@@ -185,6 +190,26 @@
       font-weight: 500;
       font-size: 20px;
       line-height: 44px;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+
+    .box {
+      height: 250px;
+      border-radius: 30px;
+
+      p {
+        width: auto;
+        font-size: 32px;
+      }
+
+      button {
+        padding: 8px 16px;
+        font-size: 16px;
+        line-height: 36px;
+      }
     }
   }
 }
